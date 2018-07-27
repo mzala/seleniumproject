@@ -9,7 +9,8 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 		features = "/Users/user/workspace/ebayTechnicalTest/src/main/java/Features"
 		,glue = {"stepDefinition"}
-		,format = {"pretty", "html:target/test-output"}
+		,plugin = {"html:src/main/java/output/test-output"}
+		,format = {"pretty"}
 		,dryRun = false
 		)
 
